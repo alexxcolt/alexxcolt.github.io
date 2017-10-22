@@ -1,0 +1,1061 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: "Roboto";
+    /*название для использования шрифта */
+    src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto/Roboto-BlackItalic.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-BoldItalic.ttf") format("truetype"), url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    /*название для использования шрифта */
+    src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype"), url("../fonts/raleway/Raleway-Italic.ttf") format("truetype"), url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1500px;
+    min-height: 100%;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------ Header -------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.header_map {
+    width: 1500px;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+}
+
+header,
+.header_all,
+.header_contact {
+    min-width: 1500px;
+    height: 700px;
+    background-color: #abeafa;
+    position: relative;
+    /* background-image: url(../img/item.png);*/
+}
+
+.header_all {
+    height: 350px;
+}
+
+.header_contact {
+    height: 350px;
+    background-color: transparent;
+}
+
+header>a>img,
+.header_all>a>img {
+    float: left;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    left: 165px;
+    top: 45px;
+}
+
+.soc_icon,
+.soc_icon_contact {
+    float: right;
+    width: 138px;
+    height: 16px;
+    margin-top: 50px;
+    margin-right: 228px;
+    position: relative;
+    z-index: 1;
+    padding-left: 12px;
+}
+
+.soc_icon_contact {
+    background-color: black;
+    padding: 5px 0 5px 15px;
+}
+
+.soc_icon a i {
+    float: left;
+    height: 16px;
+    margin-right: 15px;
+    color: white;
+}
+
+.soc_icon a i:hover {
+    box-shadow: 3px 3px 30px #888;
+}
+
+.welcome {
+    float: left;
+    clear: both;
+    width: 270px;
+    height: 300px;
+    background-color: #fff51f;
+    margin-left: 165px;
+    margin-top: 151px;
+}
+
+.welcome h2 {
+    float: none;
+    width: 199px;
+    height: 52px;
+    font-family: Raleway;
+    color: #333333;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-top: 82px;
+}
+
+.welcome p {
+    width: 218px;
+    font-family: Raleway;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 22px;
+    margin-top: 24px;
+}
+
+.right_block {
+    width: 313px;
+    height: 375px;
+    float: right;
+    position: relative;
+    right: 274px;
+    top: 58px;
+    z-index: 1;
+}
+
+.right_block > h2 {
+    font-family: Raleway;
+    color: #fffd27;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.right_block p {
+    font-family: Raleway;
+    color: #fffd27;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.right_block>a>img {
+    width: 185px;
+    margin: 10px 14px;
+}
+
+.btn_header {
+    position: absolute;
+    width: 140px;
+    height: 49px;
+    background-color: #fff51f;
+    left: 0;
+}
+
+.btn_header>a {
+    display: block;
+    font-family: Raleway;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+}
+
+.btn_header:active {
+    /*top: 431px;
+    left: 917px;*/
+}
+
+.btn_header:hover {
+    box-shadow: 3px 3px 30px #fff;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------ CONTENT-------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.content {
+    min-width: 1500px;
+}
+
+
+/*------------------------------------ хлебные крошки-------------------------------------------------------*/
+
+.bread_crumbs {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 15px;
+}
+
+.bread_crumbs li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.bread_crumbs a {
+    text-decoration: none;
+    height: 12px;
+    font-family: Roboto;
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bread_crumbs a:hover {
+    background-color: #faef03;
+}
+
+.bread_crumbs li:last-of-type a {
+    background-color: #faef03;
+}
+
+
+/*------------------------------------ MENU -------------------------------------------------------*/
+
+.menu,
+.menu_all {
+    float: left;
+    background-color: #26d2fc;
+    position: relative;
+    left: 165px;
+    top: -24px;
+}
+
+.menu_all {
+    top: 0px;
+}
+
+.head_menu {
+    height: 66px;
+    background-color: #333333;
+}
+
+.head_menu p {
+    float: left;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 42px;
+    padding-top: 32px;
+}
+
+.menu>ul {
+    width: 270px;
+    list-style-type: none;
+}
+
+.menu>ul>li {
+    position: relative;
+}
+
+.menu>ul>li>a {
+    display: block;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+.menu>ul li>a:hover {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*----------- стили для подменю -------------------------------*/
+
+.sub_menu {
+    background-color: #75e3fe;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 270px;
+    top: 0;
+}
+
+.menu>ul li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu li {
+    list-style-type: none;
+}
+
+.sub_menu a {
+    font-family: Roboto;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 36px;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 30px;
+    width: 250px;
+}
+
+
+/*==============================================================*/
+
+.products,
+.catalog {
+    width: 870px;
+    background-color: #f8f8f8;
+    float: right;
+    margin-right: 165px;
+    margin-top: -19px;
+    position: relative;
+}
+
+.catalog {
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+
+.products>p {
+    height: 22px;
+    font-family: Roboto;
+    color: #707070;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-top: 31px;
+}
+
+.products .item>a>img {
+    display: block;
+    width: 250px;
+    height: 235px;
+    margin: 10px auto;
+}
+
+.products .item {
+    float: left;
+    width: 270px;
+    height: 320px;
+    background-color: #ffffff;
+    margin-right: 6px;
+    margin-left: 12px;
+    margin-top: 29px;
+    position: relative;
+}
+
+.products .item:hover {
+    box-shadow: 2px 2px 62px #abeafa;
+}
+
+.status_product img {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.products .item h3 {
+    width: 155px;
+    float: left;
+    font-family: Roboto;
+    color: #333333;
+    font-size: 14.01px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 18.012px;
+    transform: scale(0.999, 0.999);
+    text-align: center;
+}
+
+.products .item h4 {
+    float: left;
+    font-family: Roboto;
+    color: #333333;
+    font-size: 18.01px;
+    font-weight: 900;
+    font-style: italic;
+    transform: scale(0.999, 0.999);
+    width: 98px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.products .item h5 {
+    float: right;
+    font-family: Roboto;
+    color: #e24602;
+    font-size: 14.01px;
+    font-weight: 900;
+    font-style: italic;
+    margin-right: 17px;
+    text-align: right;
+}
+
+.now_is_open {
+    float: left;
+    width: 270px;
+    height: 300px;
+    background-color: #e0e0e0;
+    margin-left: 165px;
+    margin-top: 30px;
+}
+
+.now_is_open p {
+    display: block;
+    font-family: Raleway;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 100px 20px;
+}
+
+.top_products {
+    width: 870px;
+    height: 400px;
+    background-color: #f8f8f8;
+    margin-top: 65px;
+}
+
+.sale_products {
+    width: 870px;
+    height: 400px;
+    background-color: #f8f8f8;
+    margin-top: 45px;
+}
+
+.brands,
+.brands_contacts {
+    float: left;
+    width: 1170px;
+    height: 160px;
+    background-image: url(../img/brands.jpg);
+    background-size: 1874px 160px;
+    margin: 42px 165px 15px 165px;
+}
+
+.brands_contacts {
+    width: 870px;
+    height: 160px;
+    margin: 20px 20px 123px 30px;
+    background-size: 1761px 160px;
+}
+
+
+/*.brands img, .brands_contacts img{
+    float: left;
+    width: 1142px;
+    height: 26px;
+    margin-top: 66px;
+    margin-left: 13px;
+}
+
+.brands_contacts img{
+    width: 870px;
+}
+*/
+
+.instagram {
+    float: left;
+    width: 1170px;
+    height: 350px;
+    background-image: url(../img/Instagram.jpg);
+    margin-left: 165px;
+}
+
+.soc_btn {
+    height: 150px;
+    width: 1170px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.soc_btn_f {
+    float: left;
+    width: 390px;
+    height: 150px;
+    background-color: #3b5997;
+}
+
+.soc_btn_t {
+    float: left;
+    width: 390px;
+    height: 150px;
+    background-color: #3fccfd;
+}
+
+.soc_btn_p {
+    float: left;
+    width: 390px;
+    height: 150px;
+    background-color: #cb2027;
+}
+
+.soc_btn_f i,
+.soc_btn_t i,
+.soc_btn_p i {
+    display: inline-block;
+    margin: 46px 176px;
+    height: 52px;
+    color: white;
+    text-align: center;
+    font-size: 63px;
+}
+
+.soc_btn_f a,
+.soc_btn_t a,
+.soc_btn_p a {
+    display: block;
+    width: 390px;
+    height: 150px;
+}
+
+.soc_btn_f:hover,
+.soc_btn_t:hover,
+.soc_btn_p:hover {
+    box-shadow: 5px 5px 50px black;
+}
+
+
+/*------------------------------------ страница контакты --------------------------------------------*/
+
+.form_contacts {
+    width: 870px;
+    height: 630px;
+    background-color: #f8f8f8;
+    float: right;
+    margin-right: 165px;
+    margin-top: 0px;
+}
+
+.form {
+    float: left;
+    width: 400px;
+    padding: 0px 15px;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+    display: block;
+    width: 335px;
+    height: 27px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.form textarea {
+    height: 150px;
+}
+
+.form input[type=submit] {
+    display: block;
+    margin-left: 128px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 100px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.form input[type=submit]:hover {
+    box-shadow: 2px 2px 20px black;
+}
+
+.form label {
+    font-family: Roboto;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*---------------- для блока с адресом --------------------------------------*/
+
+.adress {
+    width: 400px;
+    background-color: #f8f8f8;
+    float: right;
+    padding-right: 15px;
+}
+
+.adress h2 {
+    font-family: Roboto;
+    color: #353535;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 14px;
+    margin-bottom: 30px;
+}
+
+.adress p:nth-of-type(1) {
+    font-family: Roboto;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+.adress p:nth-of-type(2) {
+    font-family: Roboto;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.adress p:nth-of-type(3) {
+    font-family: Roboto;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 20px;
+}
+
+.adress a:nth-of-type(1) {
+    float: left;
+    margin-right: 10px;
+}
+
+.adress a:nth-of-type(2) {
+    font-family: Roboto;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.adress a>img:nth-of-type(1) {
+    float: left;
+}
+
+.adress p+img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*------------------------------------ страница продукта --------------------------------------------*/
+
+.product {
+    width: 870px;
+    height: 930px;
+}
+
+.product>img {
+    float: left;
+    width: 370px;
+    height: 370px;
+    padding-left: 20px;
+}
+
+.product .small_desc {
+    float: right;
+    width: 440px;
+    height: 370px;
+    margin-right: 15px;
+}
+
+.product .small_desc>h2 {
+    height: 17px;
+    font-family: Roboto;
+    color: #353535;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product .small_desc>h3 {
+    height: 16px;
+    font-family: Roboto;
+    color: #111111;
+    font-size: 20.94px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 53px;
+    margin-bottom: 27px;
+}
+
+.product .small_desc>h4 {
+    height: 11px;
+    font-family: Roboto;
+    color: #353535;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.product .small_desc>hr {
+    display: block;
+    width: 390px;
+    height: 1px;
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 0 auto;
+}
+
+.product .small_desc>p, .goods_character {
+    width: 438px;
+    font-family: Roboto;
+    color: #707070;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.goods_character{
+    list-style: none;
+}
+.product .small_desc>a {
+    display: block;
+    width: 120px;
+    height: 48px;
+    background-color: #fb4d01;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+.product .small_desc>a:hover {
+    box-shadow: 3px 3px 30px #aaa;
+    background-color: #FB4D6A;
+}
+
+.product .small_desc>a:active {
+    margin-left: 163px;
+    margin-top: 22px;
+}
+
+.product_img {
+    overflow: hidden;
+    height: 160px;
+    width: 870px;
+}
+
+.product_img>a {
+    float: left;
+    display: block;
+    width: 70px;
+    height: 110px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.product_img>a>img:hover {
+    box-shadow: 3px 3px 30px #aaa;
+}
+
+.header_desc {
+    width: 160px;
+    height: 29px;
+    background-color: #26d2fc;
+    font-family: Roboto;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.big_desc {
+    float: right;
+    height: 269px;
+    outline: 1px solid #eaeaea;
+    text-align: justify;
+}
+
+.big_desc>p {
+    font-family: Verdana;
+    color: #808080;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.h_product_page {
+    font-family: Raleway;
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-top: 31px;
+    font-style: italic;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------ Footer -------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.clr {
+    height: 340px;
+}
+
+footer {
+    height: 348px;
+    margin: -340px auto 0 auto;
+    background-color: #373737;
+    clear: both;
+    min-width: 1500px;
+    max-width: 1500px
+}
+
+.up_footer {
+    height: 300px;
+}
+
+.up_footer .item {
+    float: left;
+    width: 120px;
+    margin-left: 192px;
+    margin-top: 75px;
+}
+
+.up_footer .item img {
+    float: left;
+    margin-top: 40px;
+    margin-right: 7px;
+}
+
+.up_footer .item li {
+    list-style-type: none;
+}
+
+.up_footer .item li a {
+    list-style: none;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.up_footer .item li a:hover {
+    text-decoration: underline;
+}
+
+.up_footer .item p {
+    width: 232px;
+    font-family: Roboto;
+    color: #f8f8f8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: -22px;
+}
+
+.up_footer .item h4 {
+    clear: both;
+    margin-top: 9px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.up_footer .item h5 {
+    float: left;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.up_footer .item h5+a {
+    overflow: hidden;
+    font-family: Roboto;
+    color: #faef03;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 46px;
+    display: block;
+    text-decoration: none;
+}
+
+.up_footer .item input[type=email] {
+    width: 150px;
+    height: 32px;
+    background-color: #fff51f;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.up_footer .item input[type=submit] {
+    width: 90px;
+    height: 32px;
+    background-color: #000000;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.up_footer .item input[type=submit]:hover {
+    box-shadow: 3px 3px 20px #eee;
+}
+
+.up_footer .item:nth-of-type(2) {
+    float: left;
+    width: 120px;
+    height: 175px;
+    margin-left: 90px;
+    margin-top: 75px;
+}
+
+.up_footer .item:nth-of-type(3) {
+    float: left;
+    width: 130px;
+    height: 175px;
+    margin-left: 90px;
+    margin-top: 75px;
+}
+
+.up_footer .item:nth-of-type(4) {
+    float: left;
+    width: 280px;
+    height: 175px;
+    margin-left: 40px;
+    margin-top: 75px;
+}
+
+.up_footer .item:nth-of-type(5) {
+    float: left;
+    width: 232px;
+    height: 175px;
+    margin-left: 40px;
+    margin-top: 75px;
+}
+
+.up_footer .item h2:nth-of-type(2),
+.up_footer .item h2:nth-of-type(3),
+.up_footer .item h2:nth-of-type(4),
+.up_footer .item h2:nth-of-type(5),
+.up_footer .item h2 {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.down_footer {
+    height: 47px;
+    background-color: #333333;
+}
+
+.down_footer p {
+    float: left;
+    font-family: Roboto;
+    color: #dad9d9;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-left: 171px;
+    margin-top: 20px;
+}
+
+.down_footer .soc_icon {
+    float: right;
+    height: 16px;
+    width: 225px;
+    margin-top: 16px;
+    margin-right: 182px;
+}
+
+.down_footer .soc_icon i {
+    color: white;
+    margin-right: 15px;
+}
+
+.in_progress {
+    height: 100%;
+    width: 100%;
+}
+
+.in_progress img {
+    width: 400px;
+    height: 600px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.in_progress a {
+    text-align: center;
+    display: block;
+    font-size: 36px;
+}
